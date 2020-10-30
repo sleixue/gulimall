@@ -4,6 +4,12 @@ spring:
     url: jdbc:mysql://192.168.125.128:3310/gulimall_pms?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8
     username: root
     password: 123456
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  application:
+    name: gulimall-coupon
 mybatis-plus:
   mapper-locations: classpath:/mapper/**/*.xmly
   global-config:
